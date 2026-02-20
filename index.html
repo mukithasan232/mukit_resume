@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="MD Mukit Hasan - Full-Stack Web Developer. Portfolio and Resume showcasing projects in Next.js, React, Node.js, and modern web architecture.">
+    <meta name="keywords"
+        content="MD Mukit Hasan, Web Developer, Full-Stack Developer, Next.js, React, Node.js, Dhaka, Bangladesh, Software Engineer">
+    <meta name="author" content="MD Mukit Hasan">
+    <title>MD Mukit Hasan | Full-Stack Developer</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#eef2ff',
+                            100: '#e0e7ff',
+                            500: '#6366f1',
+                            600: '#4f46e5',
+                            900: '#312e81',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* Print optimizations for ATS-friendly PDF generation */
+        @media print {
+            body {
+                background-color: white;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            .no-print {
+                display: none !important;
+            }
+
+            .print-shadow-none {
+                box-shadow: none !important;
+                margin: 0 !important;
+                padding: 0 !important;
+                max-width: 100% !important;
+            }
+
+            .page-break {
+                page-break-before: always;
+            }
+
+            a {
+                text-decoration: none !important;
+                color: black !important;
+            }
+
+            .bg-brand-50 {
+                background-color: #f8fafc !important;
+            }
+
+            .text-brand-600 {
+                color: #000 !important;
+                font-weight: bold;
+            }
+        }
+
+        body {
+            background-color: #f1f5f9;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #4f46e5, #9333ea);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+
+<body class="text-slate-800 antialiased py-10 print:py-0">
+
+    <!-- Web-only Print/Download Buttons -->
+    <div class="max-w-4xl mx-auto mb-4 flex justify-end gap-3 no-print px-4">
+        <button onclick="downloadHTML()"
+            class="bg-slate-800 hover:bg-slate-700 text-white px-5 py-2 rounded-lg shadow-lg font-medium transition-all flex items-center gap-2"
+            title="Download to your computer">
+            <i class="fas fa-download"></i> Download HTML
+        </button>
+        <button onclick="window.print()"
+            class="bg-brand-600 hover:bg-brand-500 text-white px-5 py-2 rounded-lg shadow-lg font-medium transition-all flex items-center gap-2"
+            title="Print or Save as PDF">
+            <i class="fas fa-file-pdf"></i> Save as PDF
+        </button>
+    </div>
+
+    <!-- Main Resume Container -->
+    <div class="max-w-4xl mx-auto bg-white shadow-2xl rounded-2xl print-shadow-none overflow-hidden">
+
+        <!-- Header Section -->
+        <header class="bg-gradient-to-r from-brand-50 to-purple-50 p-10 print:p-6 border-b border-brand-100">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+                <div class="flex flex-col md:flex-row items-center md:items-start gap-6">
+                    <img src="MUKIT.jpeg" alt="MD Mukit Hasan"
+                        class="w-32 h-32 rounded-full border-4 border-white shadow-lg object-cover shrink-0">
+                    <div>
+                        <h1
+                            class="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight mb-2 text-center md:text-left">
+                            MD Mukit Hasan</h1>
+                        <h2 class="text-xl font-semibold gradient-text mb-4 text-center md:text-left">Full-Stack Web
+                            Developer | Founder</h2>
+                        <p class="text-slate-600 leading-relaxed max-w-2xl text-center md:text-left">
+                            Transitioned from an eager bootcamp graduate to the Founder of CoderNest Digital Solutions.
+                            Proven track record of architecting scalable SaaS platforms, automated marketplaces, and
+                            AI-powered tools using Next.js, React, and Node.js.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Contact Info Grid -->
+                <div
+                    class="flex flex-col gap-3 text-sm font-medium text-slate-700 bg-white p-5 rounded-xl shadow-sm border border-slate-100 print:shadow-none print:border-none print:p-0 shrink-0 w-full md:w-auto">
+                    <a href="mailto:mdmukithasan689@gmail.com" class="hover:text-brand-600 flex items-center gap-3"><i
+                            class="fas fa-envelope text-brand-500 w-4 text-center"></i> mdmukithasan689@gmail.com</a>
+                    <a href="tel:+8801862579883" class="hover:text-brand-600 flex items-center gap-3"><i
+                            class="fas fa-phone text-brand-500 w-4 text-center"></i> +880 1862579883</a>
+                    <span class="flex items-center gap-3"><i
+                            class="fas fa-location-dot text-brand-500 w-4 text-center"></i> Dhaka / Dinajpur,
+                        Bangladesh</span>
+                    <a href="https://www.linkedin.com/in/md-mukit-hasan-bd/"
+                        class="hover:text-brand-600 flex items-center gap-3"><i
+                            class="fab fa-linkedin text-brand-500 w-4 text-center"></i>LinkedIn </a>
+                    <a href="https://github.com/mukithasan232" class="hover:text-brand-600 flex items-center gap-3"><i
+                            class="fab fa-github text-brand-500 w-4 text-center"></i>GitHub </a>
+                </div>
+            </div>
+        </header>
+
+        <main class="p-10 print:p-6">
+
+            <!-- Skills Section -->
+            <section class="mb-10">
+                <h3 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+                    <i class="fas fa-layer-group text-brand-500"></i> Core Competencies & Skills
+                </h3>
+                <div class="flex flex-wrap gap-2">
+                    <!-- Advanced Skills -->
+                    <span
+                        class="px-3 py-1 bg-brand-50 text-brand-600 border border-brand-100 rounded-lg text-sm font-semibold">Next.js
+                        / React</span>
+                    <span
+                        class="px-3 py-1 bg-brand-50 text-brand-600 border border-brand-100 rounded-lg text-sm font-semibold">Node.js
+                        / REST APIs</span>
+                    <span
+                        class="px-3 py-1 bg-brand-50 text-brand-600 border border-brand-100 rounded-lg text-sm font-semibold">PostgreSQL
+                        / MySQL</span>
+                    <span
+                        class="px-3 py-1 bg-brand-50 text-brand-600 border border-brand-100 rounded-lg text-sm font-semibold">Prisma
+                        ORM</span>
+                    <span
+                        class="px-3 py-1 bg-brand-50 text-brand-600 border border-brand-100 rounded-lg text-sm font-semibold">Tailwind
+                        CSS</span>
+                    <span
+                        class="px-3 py-1 bg-brand-50 text-brand-600 border border-brand-100 rounded-lg text-sm font-semibold">Core
+                        PHP</span>
+                    <span
+                        class="px-3 py-1 bg-brand-50 text-brand-600 border border-brand-100 rounded-lg text-sm font-semibold">Firebase</span>
+                    <!-- Fundamental Skills -->
+                    <span
+                        class="px-3 py-1 bg-slate-100 text-slate-700 border border-slate-200 rounded-lg text-sm font-semibold">System
+                        Architecture</span>
+                    <span
+                        class="px-3 py-1 bg-slate-100 text-slate-700 border border-slate-200 rounded-lg text-sm font-semibold">SEO
+                        Optimization</span>
+                    <span
+                        class="px-3 py-1 bg-slate-100 text-slate-700 border border-slate-200 rounded-lg text-sm font-semibold">Payment
+                        Gateways</span>
+                    <span
+                        class="px-3 py-1 bg-slate-100 text-slate-700 border border-slate-200 rounded-lg text-sm font-semibold">Problem
+                        Solving</span>
+                </div>
+            </section>
+
+            <!-- Experience & Featured Projects -->
+            <section class="mb-10">
+                <h3 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+                    <i class="fas fa-briefcase text-brand-500"></i> Professional Experience & Key Projects
+                </h3>
+
+                <!-- Project 1 -->
+                <div class="mb-6 relative pl-6 border-l-2 border-brand-200 print:border-slate-300 pb-2">
+                    <div class="absolute w-3 h-3 bg-brand-500 rounded-full -left-[7px] top-2 print:bg-slate-500"></div>
+                    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-1">
+                        <h4 class="text-lg font-bold text-slate-900">MedOS - Comprehensive Hospital Management SaaS</h4>
+                        <span
+                            class="text-sm font-medium text-brand-600 bg-brand-50 px-2 py-0.5 rounded print:text-slate-600">Next.js
+                            • Prisma • PostgreSQL</span>
+                    </div>
+                    <ul class="list-disc list-inside text-slate-600 space-y-1 text-sm mt-2">
+                        <li>Architected a modern, full-stack platform featuring secure role-based authentication and
+                            real-time analytics.</li>
+                        <li>Solved fragmented healthcare scheduling bottlenecks, optimizing daily hospital workflows and
+                            patient tracking.</li>
+                        <li><strong>Impact:</strong> Delivered a highly scalable portal providing actionable financial
+                            and medical analytics.</li>
+                    </ul>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="mb-6 relative pl-6 border-l-2 border-brand-200 print:border-slate-300 pb-2">
+                    <div class="absolute w-3 h-3 bg-brand-500 rounded-full -left-[7px] top-2 print:bg-slate-500"></div>
+                    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-1">
+                        <h4 class="text-lg font-bold text-slate-900">AI Web Builder</h4>
+                        <span
+                            class="text-sm font-medium text-brand-600 bg-brand-50 px-2 py-0.5 rounded print:text-slate-600">React
+                            • OpenAI API • Node.js</span>
+                    </div>
+                    <ul class="list-disc list-inside text-slate-600 space-y-1 text-sm mt-2">
+                        <li>Engineered an AI-powered platform to eliminate technical barriers in website creation.</li>
+                        <li>Integrated OpenAI API to dynamically generate fully functional websites, themes, and AI
+                            chatbots.</li>
+                        <li><strong>Impact:</strong> Enabled non-technical users to launch modern, SEO-optimized
+                            websites in minutes.</li>
+                    </ul>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="mb-6 relative pl-6 border-l-2 border-brand-200 print:border-slate-300 pb-2">
+                    <div class="absolute w-3 h-3 bg-brand-500 rounded-full -left-[7px] top-2 print:bg-slate-500"></div>
+                    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-1">
+                        <h4 class="text-lg font-bold text-slate-900">SMM Elite - Digital Service Marketplace</h4>
+                        <span
+                            class="text-sm font-medium text-brand-600 bg-brand-50 px-2 py-0.5 rounded print:text-slate-600">PHP
+                            • MySQL • Payment APIs</span>
+                    </div>
+                    <ul class="list-disc list-inside text-slate-600 space-y-1 text-sm mt-2">
+                        <li>Developed a premium reseller panel bridging local users with global API providers.</li>
+                        <li>Integrated localized payment verification (bKash, Nagad, Rocket) and instant background
+                            order routing.</li>
+                        <li><strong>Impact:</strong> Built a custom algorithm that seamlessly handles asynchronous data
+                            for over 6,000 digital services.</li>
+                    </ul>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="mb-2 relative pl-6 border-l-2 border-transparent pb-2">
+                    <div class="absolute w-3 h-3 bg-brand-500 rounded-full -left-[7px] top-2 print:bg-slate-500"></div>
+                    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-1">
+                        <h4 class="text-lg font-bold text-slate-900">AffiliatePro - Amazon Affiliate Platform</h4>
+                        <span
+                            class="text-sm font-medium text-brand-600 bg-brand-50 px-2 py-0.5 rounded print:text-slate-600">Next.js
+                            • Neon DB • Redis</span>
+                    </div>
+                    <ul class="list-disc list-inside text-slate-600 space-y-1 text-sm mt-2">
+                        <li>Built a marketing platform automating product discovery with high-performance Server-Side
+                            Rendering (SSR).</li>
+                        <li><strong>Impact:</strong> Delivered maximum SEO impact, helping founders launch affiliate
+                            sites with minimal maintenance.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Two Column Layout for Education and Certifications -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 print:grid-cols-2">
+
+                <!-- Education -->
+                <section>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+                        <i class="fas fa-graduation-cap text-brand-500"></i> Education
+                    </h3>
+
+                    <div class="mb-4">
+                        <h4 class="text-md font-bold text-slate-800">Bachelor of Science in ICE</h4>
+                        <p class="text-slate-600 font-medium text-sm">Daffodil International University</p>
+                        <p class="text-slate-500 text-sm"><i class="far fa-calendar-alt w-4"></i> 2023 - 2027</p>
+                    </div>
+
+                    <div>
+                        <h4 class="text-md font-bold text-slate-800">High School Certificate</h4>
+                        <p class="text-slate-600 font-medium text-sm">Chirirbandar Govt Degree College</p>
+                        <p class="text-slate-500 text-sm"><i class="far fa-calendar-alt w-4"></i> Graduated 2022</p>
+                    </div>
+                </section>
+
+                <!-- Certifications -->
+                <section>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+                        <i class="fas fa-certificate text-brand-500"></i> Certifications
+                    </h3>
+
+                    <div class="mb-4 bg-slate-50 p-3 rounded-lg border border-slate-100 print:border-none print:p-0">
+                        <h4 class="text-md font-bold text-slate-800">The Complete Full-Stack Web Development Bootcamp
+                        </h4>
+                        <p class="text-brand-600 font-medium text-sm">Udemy</p>
+                    </div>
+
+                    <div class="bg-slate-50 p-3 rounded-lg border border-slate-100 print:border-none print:p-0">
+                        <h4 class="text-md font-bold text-slate-800">Build a Backend REST API with Node JS from Scratch
+                        </h4>
+                        <p class="text-brand-600 font-medium text-sm">Udemy</p>
+                    </div>
+                </section>
+
+            </div>
+
+        </main>
+    </div>
+
+    <!-- Footer for Web -->
+    <footer class="text-center text-slate-500 text-sm mt-8 pb-8 no-print">
+        Designed and Built by MD Mukit Hasan.
+    </footer>
+
+    <!-- Script to enable HTML download -->
+    <script>
+        function downloadHTML() {
+            const htmlContent = "<!DOCTYPE html>\n" + document.documentElement.outerHTML;
+            const blob = new Blob([htmlContent], { type: 'text/html' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'MD_Mukit_Hasan_Resume.html';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+    </script>
+</body>
+
+</html>
